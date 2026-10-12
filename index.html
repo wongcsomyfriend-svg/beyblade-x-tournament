@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>爆旋陀螺X 團體賽 · 賽制說明</title>
+  <meta name="description" content="爆旋陀螺X 團體賽賽制：三局兩勝擂台制、4 組循環 + 8 強淘汰、小組排名判定及淘汰賽流程。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Orbitron:wght@600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=3" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="badge">BEYBLADE X · TEAM BATTLE</div>
+      <h1>爆旋陀螺X 團體賽</h1>
+      <p class="subtitle">4 組循環 ＋ 8 強淘汰 · 12 隊 · 每隊 3 人</p>
+      <p class="rulebook">基本規則根據《爆旋陀螺X規則（亞洲版）》第 12 版</p>
+    </div>
+  </header>
+
+  <nav class="toc">
+    <a href="#overview">比賽概覽</a>
+    <a href="#battle">勝負方式</a>
+    <a href="#format">賽制流程</a>
+    <a href="#tiebreak">排名判定</a>
+    <a href="#bracket">淘汰賽</a>
+  </nav>
+
+  <main>
+    <section id="overview" class="card">
+      <h2><span class="num">00</span>比賽概覽</h2>
+      <div class="stats">
+        <div class="stat"><b>12</b><span>參賽隊伍</span></div>
+        <div class="stat"><b>3</b><span>每隊人數</span></div>
+        <div class="stat"><b>4</b><span>小組（A–D）</span></div>
+        <div class="stat"><b>4</b><span>同時開打場地</span></div>
+        <div class="stat"><b>23</b><span>團體賽總場數</span></div>
+      </div>
+    </section>
+
+    <section id="battle" class="card">
+      <h2><span class="num">VS</span>團體賽勝負方式：三局兩勝（擂台制）</h2>
+      <p class="lead">每場團體賽採 <b>三局兩勝制</b>，率先贏得 <b>2 局</b> 的隊伍勝出該場比賽。</p>
+
+      <div class="rule-grid">
+        <div class="rule">
+          <div class="rule-icon">①</div>
+          <h3>首局出戰</h3>
+          <p>雙方隊伍的 <b>第一位選手</b> 互相對戰。</p>
+        </div>
+        <div class="rule">
+          <div class="rule-icon">④</div>
+          <h3>每局勝負</h3>
+          <p>個人對戰中 <b>先得 4 分</b> 者勝出該局。</p>
+        </div>
+        <div class="rule">
+          <div class="rule-icon">⇄</div>
+          <h3>勝者留場</h3>
+          <p>勝方選手 <b>留在場上</b> 繼續應戰；敗方隊伍 <b>派出下一位選手</b> 出戰。</p>
+        </div>
+        <div class="rule">
+          <div class="rule-icon">🏁</div>
+          <h3>比賽結束</h3>
+          <p>直至其中一隊 <b>取得 2 局勝利</b> 為止（最多 3 局）。</p>
+        </div>
+      </div>
+
+      <h3 class="sub">對戰例子</h3>
+      <div class="examples">
+        <div class="example">
+          <div class="ex-title">例子 1：一人連勝兩局（2 局完場）</div>
+          <ol class="ex-steps">
+            <li><span class="pill">第 1 局</span>甲隊 1 號 vs 乙隊 1 號 → <b class="win">甲隊 1 號勝</b>（甲 1 : 0 乙）</li>
+            <li><span class="pill">第 2 局</span>甲隊 1 號（留場）vs 乙隊 2 號 → <b class="win">甲隊 1 號勝</b>（甲 2 : 0 乙）</li>
+            <li class="result">甲隊取得 2 局，勝出比賽</li>
+          </ol>
+        </div>
+        <div class="example">
+          <div class="ex-title">例子 2：打滿 3 局</div>
+          <ol class="ex-steps">
+            <li><span class="pill">第 1 局</span>甲隊 1 號 vs 乙隊 1 號 → <b class="win">甲隊 1 號勝</b>（甲 1 : 0 乙）</li>
+            <li><span class="pill">第 2 局</span>甲隊 1 號（留場）vs 乙隊 2 號 → <b class="win">乙隊 2 號勝</b>（甲 1 : 1 乙）</li>
+            <li><span class="pill">第 3 局</span>甲隊 2 號 vs 乙隊 2 號（留場）→ <b class="win">甲隊 2 號勝</b>（甲 2 : 1 乙）</li>
+            <li class="result">甲隊取得 2 局，勝出比賽</li>
+          </ol>
+        </div>
+      </div>
+      <p class="note">註：由於先取 2 局即完場，每隊未必所有隊員都需要出場。</p>
+    </section>
+
+    <section id="format">
+      <h2 class="section-title"><span class="num">01</span>賽制流程</h2>
+      <div class="flow">
+        <div class="flow-step">
+          <div class="step-no">01</div>
+          <h3>分組抽籤</h3>
+          <p>12 隊抽籤分成 <b>A、B、C、D</b> 四組，每組 3 隊（1 號、2 號、3 號）。</p>
+        </div>
+        <div class="flow-step">
+          <div class="step-no">02</div>
+          <h3>小組賽（單循環）</h3>
+          <p>每組打 3 場，4 組共 <b>12 場</b>。4 個場地同時開打，每輪每組有 1 隊短暫休息。</p>
+          <ul class="slots">
+            <li><span>時段 1</span>各組 1 號 vs 2 號（4 場並行）</li>
+            <li><span>時段 2</span>各組 2 號 vs 3 號（4 場並行）</li>
+            <li><span>時段 3</span>各組 1 號 vs 3 號（4 場並行）</li>
+          </ul>
+          <p>每組前 <b>2 名</b>出線，共 8 隊晉級。</p>
+        </div>
+        <div class="flow-step">
+          <div class="step-no">03</div>
+          <h3>8 強賽</h3>
+          <p>4 場同時開打：</p>
+          <ul class="pairs">
+            <li>A1 vs C2</li><li>B1 vs D2</li><li>C1 vs A2</li><li>D1 vs B2</li>
+          </ul>
+          <p><b class="win">勝者</b> → 晉級正賽 4 強<br /><b class="lose">負者</b> → 進入挑戰組</p>
+        </div>
+        <div class="flow-step">
+          <div class="step-no">04</div>
+          <h3>4 強半決賽 / 4 強挑戰賽</h3>
+          <p>正賽：4 位勝者對決（2 場同時開打）。</p>
+          <p>挑戰組：4 位負者對決（2 場同時開打）。</p>
+        </div>
+        <div class="flow-step">
+          <div class="step-no">05</div>
+          <h3>季殿軍賽 / 挑戰組冠軍賽</h3>
+          <p>正賽半決賽負者爭奪<b>季軍、殿軍</b>；挑戰組半決賽勝者爭奪<b>挑戰組冠軍</b>。</p>
+        </div>
+        <div class="flow-step final">
+          <div class="step-no">06</div>
+          <h3>決賽</h3>
+          <p>正賽半決賽勝者爭奪<b>冠軍、亞軍</b>。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tiebreak" class="card">
+      <h2><span class="num">02</span>小組排名判定順序</h2>
+      <p class="muted">已寫入賽前秩序冊，依以下次序比較：</p>
+      <ol class="tiebreak">
+        <li><b>小組勝負場數</b><span>勝場較多者排前</span></li>
+        <li><b>總得失分差</b><span>淨勝分 = 總得分 − 總失分（另附得失局比率供參考）</span></li>
+        <li><b>總得分</b><span>總得分較高者排前</span></li>
+        <li><b>加賽決定</b><span>若數值完全相同：現場各派 1 人進行一對一陀螺對決一場，決定排位（計分）</span></li>
+      </ol>
+    </section>
+
+    <section id="bracket" class="card">
+      <h2><span class="num">03</span>淘汰賽流程圖</h2>
+      <div class="bracket-diagram">
+        <div class="bd-col">
+          <div class="bd-title">8 強</div>
+          <div class="bd-box">A1 vs C2</div>
+          <div class="bd-box">B1 vs D2</div>
+          <div class="bd-box">C1 vs A2</div>
+          <div class="bd-box">D1 vs B2</div>
+        </div>
+        <div class="bd-col">
+          <div class="bd-title win">正賽 4 強</div>
+          <div class="bd-box">勝(A1/C2) vs 勝(B1/D2)</div>
+          <div class="bd-box">勝(C1/A2) vs 勝(D1/B2)</div>
+          <div class="bd-title lose">挑戰組 4 強</div>
+          <div class="bd-box">負(A1/C2) vs 負(B1/D2)</div>
+          <div class="bd-box">負(C1/A2) vs 負(D1/B2)</div>
+        </div>
+        <div class="bd-col">
+          <div class="bd-title win">冠亞軍賽</div>
+          <div class="bd-box gold">正賽 4 強勝者 ×2</div>
+          <div class="bd-title">季殿軍賽</div>
+          <div class="bd-box bronze">正賽 4 強負者 ×2</div>
+          <div class="bd-title lose">挑戰組冠軍賽</div>
+          <div class="bd-box">挑戰組 4 強勝者 ×2</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>爆旋陀螺X 團體賽 · 賽制說明</p>
+  </footer>
+</body>
+</html>
