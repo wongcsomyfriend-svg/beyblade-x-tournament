@@ -73,6 +73,7 @@ body {
   color: transparent;
   letter-spacing: .04em;
 }
+.event-name { margin: 6px 0 0; font-size: clamp(20px, 3.5vw, 30px); font-weight: 900; letter-spacing: .06em; }
 .subtitle { margin: 8px 0 4px; font-size: 18px; font-weight: 700; }
 .rulebook { margin: 0; color: var(--muted); font-size: 14px; }
 
