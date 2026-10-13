@@ -86,9 +86,7 @@ body {
 .subtitle { margin: 8px 0 4px; font-size: 18px; font-weight: 700; }
 .rulebook { margin: 0; color: var(--muted); font-size: 14px; }
 .rulebook a { color: var(--accent2); text-decoration: underline; }
-.source a { color: inherit; text-decoration: none; }
-.rulebook a, .source a { text-underline-offset: 3px; }
-.rulebook a:hover, .source a:hover { text-decoration: underline; }
+.rulebook a:hover { text-decoration: underline; }
 
 /* ---------- Table of contents ---------- */
 .toc {
@@ -135,12 +133,23 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 16px; }
 .stat span { color: var(--muted); font-size: 14px; }
 
 /* ---------- Battle rules ---------- */
-.source {
-  display: inline-block; margin: 0 0 12px;
-  padding: 4px 12px; border-radius: 999px;
-  border: 1px solid var(--accent2); color: var(--accent2);
-  font-size: 13px; font-weight: 700;
+.source { margin: 0 0 16px; }
+.source a {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 14px 18px; border-radius: 12px;
+  background: linear-gradient(90deg, #ffb11a, #ff7a1a);
+  color: #1a1004; font-size: clamp(16px, 2.4vw, 20px); font-weight: 900;
+  text-decoration: none;
+  box-shadow: 0 8px 24px #ff7a1a55;
 }
+.source a::after {
+  content: "PDF";
+  flex: 0 0 auto;
+  font-family: Orbitron, sans-serif; font-size: 12px; letter-spacing: .08em;
+  background: #1a1004; color: #ffb11a;
+  border-radius: 8px; padding: 5px 9px;
+}
+.source a:hover { filter: brightness(1.08); }
 .lead { font-size: 17px; margin: 0 0 16px; }
 .lead b { color: var(--accent2); }
 .rule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
