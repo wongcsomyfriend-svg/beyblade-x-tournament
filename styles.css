@@ -96,7 +96,7 @@ body {
   to { transform: translate(-50%, -50%) rotate(0deg); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .hero-photo, .orbit-ring { animation: none; }
+  .hero-photo, .orbit-ring, .go-shoot { animation: none; }
 }
 .hero-bg { display: none; }
 .ring {
@@ -148,6 +148,23 @@ body {
 }
 .event-name { margin: 6px 0 0; font-size: clamp(20px, 3.5vw, 30px); font-weight: 900; letter-spacing: .06em; }
 .subtitle { margin: 8px 0 4px; font-size: 18px; font-weight: 700; }
+.go-shoot {
+  display: inline-block;
+  margin: 18px 0 12px;
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: 1px solid rgba(251, 191, 36, 0.5);
+  background: rgba(245, 158, 11, 0.2);
+  color: #fcd34d;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  animation: goShootBounce 1s infinite;
+}
+@keyframes goShootBounce {
+  0%, 100% { transform: translateY(-25%); animation-timing-function: cubic-bezier(0.8, 0, 1, 1); }
+  50% { transform: translateY(0); animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+}
 .rulebook { margin: 0; color: var(--muted); font-size: 14px; }
 .rulebook a { color: var(--accent2); text-decoration: underline; }
 .rulebook a:hover { text-decoration: underline; }
