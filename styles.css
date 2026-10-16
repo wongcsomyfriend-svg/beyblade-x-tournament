@@ -31,12 +31,18 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(460px, 52vw, 720px);
   padding: 56px 20px 44px;
   text-align: center;
-  background: linear-gradient(135deg, #1a0f2e 0%, #0d1530 55%, #0a0d16 100%);
+  background:
+    linear-gradient(180deg, rgba(10, 13, 22, 0.28) 0%, rgba(10, 13, 22, 0.38) 58%, rgba(10, 13, 22, 0.9) 100%),
+    url("hero-bg.jpg") center 42% / cover no-repeat;
   border-bottom: 1px solid var(--line);
 }
-.hero-bg { position: absolute; inset: 0; pointer-events: none; }
+.hero-bg { display: none; }
 .ring {
   position: absolute;
   border-radius: 50%;
@@ -56,7 +62,8 @@ body {
   height: 124px; width: auto;
   filter: drop-shadow(0 6px 12px #000000cc);
 }
-.hero-inner { position: relative; }
+.hero-inner { position: relative; z-index: 1; }
+.event-name, .subtitle, .rulebook { text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75); }
 @media (max-width: 700px) {
   .corner-logo { height: 76px; top: 10px; left: 10px; }
   .hero-inner { padding-top: 72px; }
@@ -81,6 +88,7 @@ body {
   background-clip: text;
   color: transparent;
   letter-spacing: .04em;
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.65));
 }
 .event-name { margin: 6px 0 0; font-size: clamp(20px, 3.5vw, 30px); font-weight: 900; letter-spacing: .06em; }
 .subtitle { margin: 8px 0 4px; font-size: 18px; font-weight: 700; }
